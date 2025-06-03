@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="msapplication-navbutton-color" content="#1a1a2e">
+
+  <title>Procesamiento del Lenguaje Natural y Normativas de Software</title>
+  <!-- Bootstrap Dark CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero-section text-center animate__animated animate__fadeIn">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInDown glow-text">Procesamiento del Lenguaje Natural</h1>
+      <p class="lead animate__animated animate__fadeInUp animate__delay-1s"><strong>Materia:</strong> Normativas de Ingeniería de Software</p>
+      <a href="https://npl-github-io-git-main-geovannys-projects-ecf8a7a1.vercel.app/" class="btn btn-primary btn-lg mt-4 animate__animated animate__fadeInUp animate__delay-2s pulse-animation">
+        <i class="bi bi-arrow-down-circle me-2"></i>Explorar Documentación
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container" id="content">
+    <!-- What is NLP Section -->
+    <section class="mb-5" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">¿Qué es el Procesamiento del Lenguaje Natural (NLP)?</h2>
+          <p class="lead">Es una rama de la Inteligencia Artificial que permite a los sistemas comprender e interpretar el lenguaje humano.</p>
+          <p>Su objetivo es lograr que las máquinas puedan leer, entender, responder y generar lenguaje natural de manera significativa, acercando la comunicación entre humanos y computadoras.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1655720828012-585af84a1910?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+               alt="NLP Concept" 
+               class="img-fluid rounded shadow-lg" 
+               data-aos="zoom-in">
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="mb-5 py-5 bg-darker rounded-4" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <h2 class="section-title">Historia del NLP</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h5 class="text-primary">1950s</h5>
+              <p>Primeros sistemas de traducción automática</p>
+            </div>
+            <div class="timeline-item">
+              <h5 class="text-primary">1960s-1980s</h5>
+              <p>Sistemas basados en reglas</p>
+            </div>
+            <div class="timeline-item">
+              <h5 class="text-primary">1990s</h5>
+              <p>Modelos estadísticos</p>
+            </div>
+            <div class="timeline-item">
+              <h5 class="text-primary">2010s-actualidad</h5>
+              <p>Redes neuronales y modelos de lenguaje (GPT, BERT)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+               alt="Historia de la IA" 
+               class="img-fluid rounded shadow-lg"
+               data-aos="zoom-in">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Añadit seccion de svg de mapa  -->
+    <section class="mb-5" data-aos="fade-up">
+      <h2 class="section-title text-center">Mapa de Conocimiento</h2>
+      <div class="text-center">
+        <img src="assets/img/Editor _ Mermaid Chart-2025-06-03-045518.svg" alt="Mapa de Conocimiento" class="img-fluid rounded shadow-lg">
+      </div>
+      <p class="text-center mt-3">Este mapa ilustra las principales áreas y conceptos del Procesamiento del Lenguaje Natural, mostrando cómo se interconectan y aplican en el desarrollo de software.</p>
+    </section>
+
+    <!-- NLP Phases Section -->
+    <section class="mb-5" data-aos="fade-up">
+      <h2 class="section-title text-center">Fases del Procesamiento del Lenguaje Natural</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Tokenización">
+            <div class="card-body">
+              <h5 class="card-title">Tokenización</h5>
+              <p class="card-text">Separación de texto en palabras, frases o símbolos significativos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Lematización">
+            <div class="card-body">
+              <h5 class="card-title">Lematización</h5>
+              <p class="card-text">Reducción de palabras a su forma base o raíz (lema).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Análisis Sintáctico">
+            <div class="card-body">
+              <h5 class="card-title">Análisis Sintáctico</h5>
+              <p class="card-text">Comprensión de la estructura gramatical de las oraciones.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Generación de Lenguaje">
+            <div class="card-body">
+              <h5 class="card-title">Generación de Lenguaje</h5>
+              <p class="card-text">Creación de texto coherente y contextualmente relevante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="mb-5 py-5 bg-darker rounded-4" data-aos="fade-up">
+      <h2 class="section-title text-center">Aplicaciones del NLP</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-center p-4 feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-robot"></i>
+            </div>
+            <h4>Chatbots y Asistentes</h4>
+            <p>Sistemas conversacionales como Siri, Alexa y chatbots de atención al cliente.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-center p-4 feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-translate"></i>
+            </div>
+            <h4>Traducción Automática</h4>
+            <p>Servicios como Google Translate que permiten comunicación multilingüe.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-center p-4 feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-emoji-smile"></i>
+            </div>
+            <h4>Análisis de Sentimiento</h4>
+            <p>Determinación de actitudes y emociones en textos como reseñas y redes sociales.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-center p-4 feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-spellcheck"></i>
+            </div>
+            <h4>Corrección Gramatical</h4>
+            <p>Herramientas como Grammarly que mejoran la calidad del texto escrito.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-center p-4 feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-file-text"></i>
+            </div>
+            <h4>Resumen Automático</h4>
+            <p>Extracción de puntos clave de documentos largos para ahorrar tiempo de lectura.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-center p-4 feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-search"></i>
+            </div>
+            <h4>Búsqueda Semántica</h4>
+            <p>Motores de búsqueda que entienden la intención detrás de las consultas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Software Norms Section -->
+    <section class="mb-5" data-aos="fade-up">
+      <h2 class="section-title text-center">Normativas de Ingeniería de Software aplicadas al NLP</h2>
+      <div class="row">
+        <div class="col-lg-6 mb-4" data-aos="fade-right">
+          <div class="card h-100 normativa-card">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-shield-lock me-2"></i> Seguridad y Privacidad</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">GDPR/LOPD: Protección de datos personales en textos procesados.</li>
+                <li class="list-group-item">ISO/IEC 27001: Seguridad de la información en sistemas NLP.</li>
+                <li class="list-group-item">Ética en IA: Directrices para evitar sesgos en modelos de lenguaje.</li>
+              </ul>
+              <a href="seguridad-privacidad.html" class="btn btn-primary mt-3 animate__animated animate__pulse animate__infinite">
+                <i class="bi bi-arrow-right-circle me-2"></i>Ver detalles
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4" data-aos="fade-left">
+          <div class="card h-100 normativa-card">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-check-circle me-2"></i> Calidad del Software</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">ISO/IEC 25010: Evaluación de calidad en funcionalidad, usabilidad y mantenibilidad.</li>
+                <li class="list-group-item">IEEE 830: Especificación clara de requisitos para funcionalidades NLP.</li>
+                <li class="list-group-item">WCAG 2.1: Accesibilidad en interfaces conversacionales.</li>
+              </ul>
+              <a href="calidad-software.html" class="btn btn-primary mt-3 animate__animated animate__pulse animate__infinite">
+                <i class="bi bi-arrow-right-circle me-2"></i>Ver detalles
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Importance Section -->
+    <section class="mb-5 p-5 rounded-4" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color));" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 class="text-white">Importancia para la materia</h2>
+          <p class="lead text-white">En la materia de <strong>Normativas de Ingeniería de Software</strong> se estudian principios que garantizan la calidad del software. Aplicarlos en el contexto de NLP asegura que las soluciones sean seguras, éticas, eficientes y sostenibles.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+               alt="Importancia" 
+               class="img-fluid rounded-circle shadow-lg" 
+               style="width: 200px; height: 200px; object-fit: cover;"
+               data-aos="zoom-in">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Procesamiento del Lenguaje Natural</h5>
+          <p>Explorando la intersección entre la inteligencia artificial y la comunicación humana.</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Inicio</a></li>
+            <li><a href="#content" class="text-white">Contenido</a></li>
+            <li><a href="seguridad-privacidad.html" class="text-white">Seguridad y Privacidad</a></li>
+            <li><a href="calidad-software.html" class="text-white">Calidad del Software</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p><i class="bi bi-envelope me-2"></i> info@nlp-normativas.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 bg-light opacity-25">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2023 Procesamiento del Lenguaje Natural y Normativas de Software. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Button -->
+  <button class="btn btn-primary chat-btn animate__animated animate__pulse animate__infinite" onclick="openModal()">
+    <i class="bi bi-chat-dots"></i>
+  </button>
+
+  <!-- Chat Modal -->
+  <div class="modal fade" id="chatModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header chat-header">
+          <h5 class="modal-title"><i class="bi bi-robot me-2"></i>Chat sobre NLP</h5>
+          <button type="button" class="btn-close btn-close-white" onclick="closeModal()" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="chat-box" id="chat"></div>
+        </div>
+        <div class="modal-footer">
+          <div class="input-group">
+            <input type="text" id="userInput" class="form-control bg-dark text-light border-dark" placeholder="Escribe tu pregunta..." onkeypress="handleKeyPress(event)">
+            <button class="btn btn-primary" onclick="sendMessage()"><i class="bi bi-send"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

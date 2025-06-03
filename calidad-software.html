@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calidad de Software en NLP</title>
+  <!-- Bootstrap Dark CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #6c5ce7;
+      --secondary-color: #a29bfe;
+      --dark-color: #1a1a2e;
+      --darker-color: #16213e;
+      --light-color: #e2f3f5;
+      --accent-color: #00cec9;
+    }
+    
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      line-height: 1.7;
+    }
+    
+    .normativa-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      padding: 100px 0;
+      margin-bottom: 50px;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    
+    .normativa-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-left: 4px solid var(--accent-color);
+      transition: all 0.3s ease;
+    }
+    
+    .normativa-item:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateX(10px);
+    }
+    
+    .section-title {
+      position: relative;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      color: var(--accent-color);
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--primary-color);
+      border-radius: 3px;
+    }
+    
+    .back-btn {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      z-index: 99;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 24px;
+      box-shadow: 0 10px 25px rgba(108, 92, 231, 0.4);
+      background-color: var(--primary-color);
+      border: none;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .back-btn:hover {
+      transform: scale(1.1);
+      background-color: var(--accent-color);
+    }
+    
+    .feature-icon {
+      font-size: 2rem;
+      color: var(--accent-color);
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="normativa-header text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold"><i class="bi bi-check-circle"></i> Calidad del Software</h1>
+      <p class="lead">Normativas aplicadas al Procesamiento del Lenguaje Natural</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mb-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <!-- ISO/IEC 25010 -->
+        <div class="normativa-item" data-aos="fade-up">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-award feature-icon"></i>
+            <h3 class="mb-0">ISO/IEC 25010</h3>
+          </div>
+          <p>Esta norma define un modelo de calidad para productos de software, con características como funcionalidad, usabilidad y mantenibilidad.</p>
+          <h5 class="mt-4">Aplicación en sistemas NLP:</h5>
+          <ul>
+            <li><strong>Funcionalidad:</strong> Precisión en el procesamiento de lenguaje</li>
+            <li><strong>Usabilidad:</strong> Interfaces conversacionales intuitivas</li>
+            <li><strong>Eficiencia:</strong> Rendimiento en tiempo real</li>
+            <li><strong>Mantenibilidad:</strong> Modularidad en componentes de NLP</li>
+            <li><strong>Portabilidad:</strong> Adaptación a diferentes entornos</li>
+          </ul>
+          <h5 class="mt-4">Ejemplo de implementación:</h5>
+          <p>Un sistema de análisis de sentimientos debe ser evaluado regularmente en precisión (funcionalidad), tener una API bien documentada (usabilidad), procesar textos rápidamente (eficiencia), y permitir actualizaciones de modelos (mantenibilidad).</p>
+        </div>
+        
+        <!-- IEEE 830 -->
+        <div class="normativa-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-file-text feature-icon"></i>
+            <h3 class="mb-0">IEEE 830</h3>
+          </div>
+          <p>El estándar IEEE 830 proporciona guías para la especificación de requisitos de software (SRS), crucial en proyectos complejos de NLP.</p>
+          <h5 class="mt-4">Requisitos clave para sistemas NLP:</h5>
+          <ul>
+            <li><strong>Funcionales:</strong> Capacidades de procesamiento específicas</li>
+            <li><strong>Interfaces:</strong> APIs, interfaces de usuario conversacionales</li>
+            <li><strong>Rendimiento:</strong> Tiempos de respuesta, carga máxima</li>
+            <li><strong>Restricciones:</strong> Idiomas soportados, formatos de entrada</li>
+            <li><strong>Calidad:</strong> Precisión mínima requerida</li>
+          </ul>
+          <h5 class="mt-4">Caso práctico:</h5>
+          <p>Para un chatbot médico, los requisitos deben especificar exactamente qué tipos de consultas puede manejar, cómo debe responder a preguntas fuera de su dominio, y los protocolos para derivar a profesionales humanos cuando sea necesario.</p>
+        </div>
+        
+        <!-- WCAG 2.1 -->
+        <div class="normativa-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-universal-access feature-icon"></i>
+            <h3 class="mb-0">WCAG 2.1</h3>
+          </div>
+          <p>Las Pautas de Accesibilidad para el Contenido Web son esenciales para interfaces conversacionales accesibles.</p>
+          <h5 class="mt-4">Principios aplicados a NLP:</h5>
+          <ul>
+            <li><strong>Perceptible:</strong> Alternativas para contenido de voz</li>
+            <li><strong>Operable:</strong> Navegación por teclado en chatbots</li>
+            <li><strong>Comprensible:</strong> Lenguaje claro y predecible</li>
+            <li><strong>Robusto:</strong> Compatibilidad con tecnologías asistivas</li>
+          </ul>
+          <h5 class="mt-4">Implementación accesible:</h5>
+          <p>Un asistente virtual debe ofrecer: transcripción de respuestas de voz, controles compatibles con lectores de pantalla, opción para simplificar el lenguaje, y evitar dependencia exclusiva de reconocimiento de voz para usuarios con dificultades del habla.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Back Button -->
+  <a href="index.html" class="back-btn animate__animated animate__pulse animate__infinite">
+    <i class="bi bi-arrow-left"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
